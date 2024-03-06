@@ -1,0 +1,297 @@
+body
+{
+    background-color: #202020;
+    color: #EDE7D9 ;
+    font-family: 'Courier New', monospace;
+} 
+
+nav
+{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.nav-boxes
+{
+    width: 100%;
+    padding: 20px 0;
+    text-align: left;
+}
+
+a
+{
+    color: #EDE7D9 ;
+}
+
+
+.nav-logo
+{
+    font-size: 3rem;
+    font-weight: bold;
+    width: 60%;
+    text-decoration: none;
+}
+
+.nav-link-box
+{
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+.link-box
+{
+    display: inline-flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.nav-weblinks a
+{
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-right: 10%;
+    transition-duration: 0.4s;
+}
+
+.nav-weblinks a:hover
+{
+    color: #04dbd8;  
+}
+
+
+.nav-links
+{
+    text-decoration: none;
+    margin-right: 10%;
+    font-weight: bold;
+    font-size: 1.2rem;
+    transition-duration: 0.4s;
+}
+
+.nav-links:hover
+{
+    opacity: 50%;
+    color: #04dbd8;
+}
+
+
+.container 
+{
+    justify-content: left;
+    text-align: left;
+    width: 75%;
+    margin: auto;
+    margin-top: 5%;
+    height: 75vh;
+    display: flex;
+    justify-content: space-between;
+    animation: fadeIn ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+
+}
+
+#contactForm
+{
+    text-align: center;
+    width: 50%;
+    margin: 20px auto;
+    color: #EDE7D9;
+}
+
+#contactForm button
+{
+    background-color: #04dbd8;
+    color: #202020;
+    font-weight: bold;
+    border: none;
+}
+
+#contactForm input
+{
+    color: #EDE7D9;
+}
+
+#contactForm textarea
+{
+    color: #EDE7D9;
+}
+
+#contactForm label::after
+{
+    background-color: #04dbd8;
+}
+
+.form-control
+{
+    background-color: #202020;
+}
+
+.form-control:focus {
+    border-color: #04dbd8;
+    background-color: #202020;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(4, 219, 216, 0.6);
+  }
+
+
+.left-box
+{
+   width: 75%;   
+}
+
+.right-box
+{
+    width: 100%;
+}
+
+#wrapper
+{
+    display: inline-block;
+}
+
+
+#name-underline
+{
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+}
+
+
+#hello
+{
+    margin-bottom: 0;
+    font-size: 0.8rem;
+}
+
+#title
+{
+    background-color: #04dbd8;
+    color: #202020;
+    padding: 5px;
+    display: inline-block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+
+#icon
+{
+    width: 3rem;
+    height: 3rem;
+    transition-duration: 0.2s;
+}
+
+
+#icon:hover
+{
+    transform: translateY(-5px);
+
+}
+
+a
+{
+    text-decoration: none;
+}
+
+
+.shortcuts
+{
+     border: 1px solid #EDE7D9;
+     border-radius: 10px;
+     text-align: center;
+     padding: 10px;
+     margin: 5%;
+     transition-duration: 1s;
+}
+
+
+.shortcuts:hover
+{
+    background-color: rgba(217, 217, 217, 0.1)
+}
+
+#project-button
+{
+    color: #202020;
+    background-color: #04dbd8;
+    padding: 10px;
+    border: none;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 50px;
+    transition-duration: 0.4s;
+}
+
+#project-button:hover
+{
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+
+
+.project-display
+{
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(25%, 1fr));
+    grid-auto-rows: 1fr;
+    grid-gap: 1em;
+    width: 75%;
+    margin: auto;
+}
+
+
+#project
+{
+    border: 1px solid #EDE7D9;
+    position: relative;
+    text-align: center;
+
+}
+
+#project img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 0.4s;
+}
+
+#project:hover img
+{
+    opacity: 0.2;
+    filter: blur(2px);
+}
+
+#project-name
+{
+    position: absolute;
+    display: inline-block;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transition-duration: 0.4s;
+    font-weight: bold;
+}
+
+#clock {max-width: 600px;}
+
+
+
+
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

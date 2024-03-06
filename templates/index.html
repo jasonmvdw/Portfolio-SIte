@@ -1,0 +1,27 @@
+{% extends "layout.html"%}
+
+{% block body%}
+
+  <div class = "container">
+
+    <div class = "left-box">
+      <p id = "hello">print("Hello, World")</p>
+      <div id="wrapper">
+        <h3 id="title">Aspiring full-stack developer</h3>
+        <h1 id="quote">Don't just tell people.</h1>
+        <h1 id="quote">Show them</h1>
+        <hr id = "name-underline">
+        <div id="clock">
+          <h3 id="date-time"></h3>
+        </div>
+      </div>
+      <a href="/projects"><button id="project-button">See what I've done</button></a>
+    </div>
+
+    <div class = "right-box">
+    
+
+    </div>
+  </div>
+  <script src="{{url_for('static', filename='app.js')}}" type="text/javascript"></script>
+{% endblock %}

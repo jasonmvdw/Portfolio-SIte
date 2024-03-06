@@ -1,0 +1,13 @@
+{% extends "layout.html"%}
+
+{% block body%}
+
+<div class="project-display">
+
+    <div id="project"><img src="{{url_for('static', filename='morse.jpg')}}" alt=""><h2 id="project-name">Morse Code Converter</h2></div>
+    <div id="project"><img src="{{url_for('static', filename='tictac.jpg')}}" alt=""><h2 id="project-name">Tic-Tac-Toe</h2></div>
+    <div id="project"></div>
+    <div id="project"></div>
+</div>
+
+{% endblock %}

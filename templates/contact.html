@@ -1,0 +1,30 @@
+{% extends "layout.html"%}
+
+{% block body%}
+
+
+<div class="container">
+    
+    <form id="contactForm" method="POST">
+        <h2>Contact me!</h2>
+        <div class="form-floating mb-3">
+          <input class="form-control" name="name" type="text" placeholder="Name"  required focused/>
+          <label for="name">Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input class="form-control" name="emailAddress" type="email" placeholder="Email Address"  required/>
+          <label for="emailAddress">Email Address</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <textarea class="form-control" name="message" type="text" placeholder="Message" style="height: 10rem;" required></textarea>
+          <label for="message">Message</label>
+        </div>
+
+        <div class="d-grid">
+          <button class="btn btn-primary btn-lg " id="submitButton" type="submit">Submit</button>
+        </div>
+      </form>
+</div>
+{% endblock %}
